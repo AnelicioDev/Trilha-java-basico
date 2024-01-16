@@ -14,5 +14,8 @@ public class Estabelecimento {
         Atendente atendente = new Atendente();
         atendente.serviMesa();
         atendente.pegaLancheCozinha();
+
+        Cliente cliente = new Cliente();
+
     }
 }
