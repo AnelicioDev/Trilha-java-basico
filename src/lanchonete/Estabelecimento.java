@@ -16,6 +16,7 @@ public class Estabelecimento {
         atendente.pegaLancheCozinha();
 
         Cliente cliente = new Cliente();
+        cliente.pagar();
 
     }
 }
