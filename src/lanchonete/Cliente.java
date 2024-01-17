@@ -1,10 +1,10 @@
 package lanchonete;
 
 public class Cliente {
-    private String nomeCliente;
-    private int numeroDaMesa;
+    private final String nomeCliente;
+    private final int numeroDaMesa;
 
-    private boolean pagou;
+    private final boolean pagou;
 
     public Cliente(String nome, int mesa, boolean pago){
         this.nomeCliente = nome;
@@ -12,7 +12,7 @@ public class Cliente {
         this.pagou = pago;
     }
     public void pagar(){
-        if (pagou == true){
+        if (pagou){
             System.out.println("CLIENTE: " + nomeCliente + ", NUMERO DA MESA: " + numeroDaMesa + ", STATUS: PAGO");
         }else {
             System.out.println("CLIENTE NÃO PAGOU");
