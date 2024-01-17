@@ -15,7 +15,7 @@ public class Cliente {
         if (pagou){
             System.out.println("CLIENTE: " + nomeCliente + ", NUMERO DA MESA: " + numeroDaMesa + ", STATUS: PAGO");
         }else {
-            System.out.println("CLIENTE NÃO PAGOU");
+            System.out.println("CLIENTE NÃO PAGOU!");
         }
     }
 }
