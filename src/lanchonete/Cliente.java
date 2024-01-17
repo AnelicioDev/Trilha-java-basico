@@ -6,10 +6,10 @@ public class Cliente {
 
     private final boolean pagou;
 
-    public Cliente(String nome, int mesa, boolean pago){
-        this.nomeCliente = nome;
-        this.numeroDaMesa = mesa;
-        this.pagou = pago;
+    public Cliente(String nomeCliente, int numeroDaMesa, boolean pagou){
+        this.nomeCliente = nomeCliente;
+        this.numeroDaMesa = numeroDaMesa;
+        this.pagou = pagou;
     }
     public void pagar(){
         if (pagou){
