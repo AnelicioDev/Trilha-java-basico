@@ -1,22 +1,24 @@
 package lanchonete;
 
+import java.util.Scanner;
+
 public class Estabelecimento {
     public static void main(String[] args){
-        Almoxarife almoxarife = new Almoxarife();
-        almoxarife.entradaDeItens();
-        almoxarife.saindaDeItens();
+        Scanner scanner = new Scanner(System.in);
 
-        Cozinheiro cozinheiro = new Cozinheiro();
-        cozinheiro.adicionarSucoNoBalcao();
-        cozinheiro.adicionarLancheNoBalcao();
-        cozinheiro.adicionarComboNoBalcao();
+        System.out.println("Nome do clente:");
+        String nome = scanner.nextLine();
 
-        Atendente atendente = new Atendente();
-        atendente.serviMesa();
-        atendente.pegaLancheCozinha();
+        System.out.println("Número da mesa:");
+        int mesa = scanner.nextInt();
 
-        Cliente cliente = new Cliente();
+        System.out.println("Status de pagamento:");
+        boolean pagamento = scanner.nextBoolean();
+
+        Cliente cliente = new Cliente(nome, mesa, pagamento);
         cliente.pagar();
+
+        scanner.close();
 
     }
 }
