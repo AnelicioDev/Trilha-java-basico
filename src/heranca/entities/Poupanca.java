@@ -1,6 +1,6 @@
 package entities;
 
-public class Poupanca extends Conta {
+public final class Poupanca extends Conta {
 
     private double taxaDejurus;
 
@@ -10,7 +10,7 @@ public class Poupanca extends Conta {
     }
 
     @Override
-    public void sacar(double valor) {
+    public final void sacar(double valor) {
         super.sacar(valor);
         saldoConta -= taxaDejurus;
     }
